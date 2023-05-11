@@ -9,6 +9,8 @@ class WidgetsExample(GridLayout):
     mon_text = StringProperty('1')
     compteur = 1
     compteur_actif = BooleanProperty(False)
+    text_input_str = StringProperty()
+
 
     def on_button_click(self):
         print("Button clicker")
@@ -27,3 +29,6 @@ class WidgetsExample(GridLayout):
 
     def on_switch_active(self, widget):
         print(f"widget {widget.active}")
+
+    def on_text_validate(self, widget):
+        self.text_input_str = widget.text
