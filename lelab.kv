@@ -1,5 +1,6 @@
-StackLayoutExample:
+ScrollViewExample:
 
+#StackLayoutExample:
 #GridLayoutExample:
 #AnchorLayoutExample:
 #BoxLayoutExample:
@@ -111,8 +112,6 @@ StackLayoutExample:
         text: "Page"
     Button:
         text: "Grid" 
-
-
  
 <StackLayoutExample>:
     # "left-right, top-bottom"
@@ -120,3 +119,7 @@ StackLayoutExample:
     # padding: ("20dp", "20dp", "20dp", "20dp")
     # spacing: "20dp", "20dp"
    
+<ScrollViewExample@ScrollView>
+    StackLayoutExample:
+        size_hint: 1, None
+        height: self.minimum_height
