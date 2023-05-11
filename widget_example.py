@@ -25,3 +25,5 @@ class WidgetsExample(GridLayout):
             widget.text = "Off"
             self.compteur_actif = False
 
+    def on_switch_active(self, widget):
+        print(f"widget {widget.active}")

@@ -15,3 +15,9 @@
         font_name: "fonts/Lcd.ttf"
         font_size: "80dp"
         color: 1, 0.5, 1, 1
+    Switch:
+        id: mon_switch
+        on_active: root.on_switch_active(self)
+        size_hint: None, 1
+        width: "100dp"
+        active: True
