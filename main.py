@@ -34,6 +34,10 @@ class StackLayoutExample(StackLayout):
 class ScrollViewExample(ScrollView):
     pass
 
+# Versions 2
+class WidgetExample(Widget):
+    pass
+
 
 class LeLabApp(App):
     pass
