@@ -7,9 +7,9 @@ from kivy.uix.stacklayout import StackLayout
 from kivy.uix.button import Button
 from kivy.metrics import dp
 from kivy.uix.scrollview import ScrollView
+
+
 # Versions 1
-
-
 class MainWidget(Widget):
     pass
 
@@ -31,9 +31,10 @@ class StackLayoutExample(StackLayout):
             b = Button(text=str(i+1), size_hint=(None, None),
                        size=(dp(80), dp(80)))
             self.add_widget(b)
-
 class ScrollViewExample(ScrollView):
     pass
+
+
 class LeLabApp(App):
     pass
 
