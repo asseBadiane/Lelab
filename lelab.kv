@@ -1,5 +1,6 @@
-BoxLayoutExample:
+AnchorLayoutExample:
 
+#BoxLayoutExample:
 #MainWidget:
 
 <MainWidget>:
@@ -72,3 +73,18 @@ BoxLayoutExample:
             text: "N"
     Label:
         text: "DEV"
+
+<AnchorLayoutExample>:
+    # right, left, center
+    anchor_x: "center"
+    # bottom, top, center
+    anchor_y: "center"
+   
+    BoxLayout:
+        size_hint: .4, .4
+        Button:
+            text: "Hello"
+        Button:
+            text: "Galsen"
+        Button:
+            text: "DEV"
