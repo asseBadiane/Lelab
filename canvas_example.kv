@@ -1,3 +1,28 @@
+<CanvasExamplesTabs@TabbedPanel>:
+    do_default_tab: False
+    TabbedPanelItem:
+        text: "Canvas-1"
+        CanvasExample1:
+    TabbedPanelItem:
+        text: "Canvas-2"
+        CanvasExample2:
+    TabbedPanelItem:
+        text: "Canvas-3"
+        CanvasExample3:
+    TabbedPanelItem:
+        text: "Canvas-4"
+        CanvasExample4:
+    TabbedPanelItem:
+        text: "Canvas-5"
+        CanvasExample5:
+    TabbedPanelItem:
+        text: "Canvas-6"
+        CanvasExample6:
+    TabbedPanelItem:
+        text: "Canvas-7"
+        CanvasExample7:
+
+
 
 #:set s dp(150)
 
@@ -84,7 +109,7 @@
             rectangle: (550, 100, 100, 60) # x, y, w, h
             width: 2
 
-<CanvasExemple4>:
+<CanvasExample4>:
     Button:
         pos: 100, 500
         size: "80dp", "60dp"
@@ -95,3 +120,46 @@
         size: "80dp", "60dp"
         text: "Clické"
         on_press: root.on_button_a_click_cercle()
+
+<CanvasExample6>:
+    BoxLayout:
+        size: root.size
+        Widget:
+            canvas:
+                Color:
+                    rgb: 0, 1, 0
+                Rectangle:
+                    size: self.size
+        RelativeLayout:
+            canvas:
+                Color:
+                    rgb: 0, 0, 1
+                Rectangle:
+                    size: self.size
+        RelativeLayout:
+            canvas:
+                Color:
+                    rgb: 1, 0, 0
+                Rectangle:
+                    size: self.size
+
+<CanvasExample7>:
+    RelativeLayout:
+        canvas:
+            Color:
+                rgb: 0, 0, 1
+            Rectangle:
+                size: self.size
+    RelativeLayout:
+        canvas:
+            Color:
+                rgb: 1, 1, 1
+            Rectangle:
+                size: self.size
+    RelativeLayout:
+        canvas:
+            Color:
+                rgb: 1, 0, 0
+            Rectangle:
+                size: self.size
+

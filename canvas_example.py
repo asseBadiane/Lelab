@@ -5,6 +5,7 @@ from kivy.graphics.context_instructions import Color
 
 from kivy.metrics import dp
 from kivy.properties import Clock
+from kivy.uix.boxlayout import BoxLayout
 
 
 Builder.load_file("canvas_example.kv")
@@ -142,3 +143,10 @@ class CanvasExample5(Widget):
             self.value_3_x = -self.value_3_x
         self.ball_3.pos = (x, y)
 
+
+class CanvasExample6(Widget):
+    pass
+
+
+class CanvasExample7(BoxLayout):
+    pass

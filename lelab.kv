@@ -2,7 +2,7 @@
 #: import layout_example  layout_example
 #:import navigation_screen_manager navigation_screen_manager
 #:import boxlayout_with_actionBar boxlayout_with_actionBar
-
+#: import canvas_example canvas_example
 
 
 <MenuPrincipal@BoxLayout>:
@@ -16,6 +16,10 @@
     Button:
         text: "Images"
         on_press: app.manager.push("ImagesExample")
+    Button:
+        text: "Canvas"
+        on_press: app.manager.push("CanvasExamplesTabs")
+
 
 <MyScreenManager>:
     Screen:
@@ -36,6 +40,12 @@
         BoxLayoutWithActionBar:
             title: "Images"
             ImagesExample:
+    Screen:
+        name: "CanvasExamplesTabs"
+        BoxLayoutWithActionBar:
+            title: "Canvas"
+            CanvasExamplesTabs:
+
 
 
 

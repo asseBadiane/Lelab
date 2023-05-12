@@ -24,13 +24,36 @@
         PageLayoutExample:
 
 
+
 <PageLayoutExample@PageLayout>:
-    ScrollViewExample:
-    StackLayoutExample:
-    GridLayoutExample:
-    AnchorLayoutExample:
-    BoxLayoutExample:
     MainWidget:
+        canvas.before:
+            Color:
+                rgb: 0, 0, 0
+            Rectangle:
+                size: self.size
+                pos: self.pos
+    BoxLayoutExample:
+        canvas.before:
+            Color:
+                rgb: 0, 0, 0
+            Rectangle:
+                size: self.size
+                pos: self.pos
+    AnchorLayoutExample:
+        canvas.before:
+            Color:
+                rgb: 0, 0, 0
+            Rectangle:
+                size: self.size
+                pos: self.pos
+    GridLayoutExample:
+        canvas.before:
+            Color:
+                rgb: 0, 0, 0
+            Rectangle:
+                size: self.size
+                pos: self.pos
 
 <MainWidget>:
     Label:
