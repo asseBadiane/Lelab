@@ -3,7 +3,7 @@ from kivy.app import App
 from kivy.properties import ObjectProperty
 
 from navigation_screen_manager import NavigationScreenManager
-from canvas_example import CanvasExample1, CanvasExample2
+from canvas_example import CanvasExample1, CanvasExample2, CanvasExample3
 class MyScreenManager(NavigationScreenManager):
     pass
 
@@ -13,7 +13,7 @@ class LeLabApp(App):
     def build(self):
         # self.manager = MyScreenManager()
         # return self.manager
-        return CanvasExample2()
+        return CanvasExample3()
 
 
 LeLabApp().run()
